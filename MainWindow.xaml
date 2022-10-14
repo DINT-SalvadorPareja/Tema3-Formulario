@@ -8,7 +8,7 @@
         Title="Formulario" Height="500" Width="800" Icon="/Assets/48.ico">
     <DockPanel Margin="5">
         <TextBlock DockPanel.Dock="Top" TextAlignment="Center" Margin="10" FontSize="40" FontWeight="Bold">Formulario</TextBlock>
-        <DockPanel LastChildFill="false" Dock="Bottom" Margin="10">
+        <DockPanel Dock="Bottom" Margin="10">
             <TextBlock DockPanel.Dock="Left" FontSize="20" FontStyle="Italic">Salvador Pareja</TextBlock>
             <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
                 <Button Width="80" Margin="5">Aceptar</Button>
