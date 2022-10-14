@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_Formulario"
         mc:Ignorable="d"
-        Title="Formulario" Height="500" Width="800" MaxHeight="500" MaxWidth="800" Icon="/Assets/48.ico">
+        Title="Formulario" Height="500" Width="800" Icon="/Assets/48.ico">
     <DockPanel Margin="5">
         <TextBlock DockPanel.Dock="Top" TextAlignment="Center" Margin="10" FontSize="40" FontWeight="Bold">Formulario</TextBlock>
         <DockPanel LastChildFill="false" Dock="Bottom" Margin="10">
