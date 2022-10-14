@@ -8,7 +8,7 @@
         Title="Formulario" Height="500" Width="800" Icon="/Assets/48.ico">
     <DockPanel Margin="5">
         <TextBlock DockPanel.Dock="Top" TextAlignment="Center" Margin="10" FontSize="40" FontWeight="Bold">Formulario</TextBlock>
-        <DockPanel Dock="Bottom" Margin="10">
+        <DockPanel Dock="Bottom" Margin="10" LastChildFill="False">
             <TextBlock DockPanel.Dock="Left" FontSize="20" FontStyle="Italic">Salvador Pareja</TextBlock>
             <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
                 <Button Width="80" Margin="5">Aceptar</Button>
@@ -18,7 +18,7 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Image Grid.Column="1" Source="./Assets/personatotalmenterandom.png" Stretch="Uniform" Margin="10"/>
             <StackPanel Grid.Column="0">
@@ -26,7 +26,7 @@
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="60"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition/>
                             <ColumnDefinition Width="20"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
@@ -57,10 +57,10 @@
                         </GroupBox>
                         <GroupBox Header="Estado civil" Width="200" HorizontalAlignment="Left" Margin="7">
                             <StackPanel Margin="10">
-                                <RadioButton IsChecked="True">Soltero</RadioButton>
-                                <RadioButton>Casado</RadioButton>
-                                <RadioButton>Divorciado</RadioButton>
-                                <RadioButton>Viudo</RadioButton>
+                                <RadioButton IsChecked="True" GroupName="EstadoCivil">Soltero</RadioButton>
+                                <RadioButton GroupName="EstadoCivil">Casado</RadioButton>
+                                <RadioButton GroupName="EstadoCivil">Divorciado</RadioButton>
+                                <RadioButton GroupName="EstadoCivil">Viudo</RadioButton>
                             </StackPanel>
                         </GroupBox>
                     </StackPanel>
